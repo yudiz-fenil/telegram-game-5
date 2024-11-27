@@ -7,7 +7,7 @@ const GAME_URL = 'https://game.yudiz.com/jet-jumper/';
 
 const bot = new Telegraf(token);
 const app = express();
-const port = 3025;
+const port = 3026;
 
 app.use(bodyParser.json());
 
@@ -54,5 +54,5 @@ process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
 
 // Set up webhook
-const url = 'https://telegram5.game.webdevprojects.cloud' + token;
+const url = 'https://telegrams5.game.webdevprojects.cloud' + token;
 bot.telegram.setWebhook(url);
